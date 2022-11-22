@@ -1,0 +1,35 @@
+{
+  "name": "devops",
+  "version": "1.0.0",
+  "description": "devops mini-projet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "build": "webpack ./src/app.js -o public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ractouf/devops.git"
+  },
+  "keywords": [
+    "devops"
+  ],
+  "author": "Lapinski Damien, Vandeputte François",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ractouf/devops/issues"
+  },
+  "homepage": "https://github.com/Ractouf/devops#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
