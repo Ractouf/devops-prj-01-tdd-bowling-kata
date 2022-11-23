@@ -14,7 +14,9 @@ class BowlingGame {
     for (let i = 0; i < 10; i++) {
       let frameScore = this.rolls[rollIndex] + this.rolls[rollIndex + 1];
 
-      score += frameScore;
+      if (frameScore === 10) score += frameScore + this.rolls[rollIndex + 2];
+      else score += frameScore;
+
       rollIndex += 2;
     }
     return score;
