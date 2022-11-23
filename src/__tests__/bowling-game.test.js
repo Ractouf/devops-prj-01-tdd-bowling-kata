@@ -23,6 +23,14 @@ describe("Test bowling game", () => {
     rollMany(17, 0);
     expect(game.score).toEqual(12);
   });
+
+  test("should handle a strike with bonus", () => {
+    game.roll(10);
+    game.roll(1);
+    game.roll(1);
+    rollMany(16, 0);
+    expect(game.score).toEqual(14);
+  });
 });
 
 function rollMany(rolls, pins) {
