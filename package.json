@@ -1,46 +1,46 @@
 {
-  "name": "devops",
-  "version": "1.0.0",
-  "description": "devops mini-projet",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watchAll",
-    "commit": "cz",
-    "build": "webpack ./src/app.js -o public/",
-    "prettier": "prettier -c \"src/**/*.js\"",
-    "prettier:fix": "prettier -w \"src/**/*.js\"",
-    "lint": "eslint \"src/**/*.js\"",
-    "lint:fix": "eslint --fix \"src/**/*.js\"",
-    "code:fix": "npm run prettier:fix && npm run lint:fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ractouf/devops.git"
-  },
-  "keywords": [
-    "devops"
-  ],
-  "author": "Lapinski Damien, Vandeputte François",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ractouf/devops/issues"
-  },
-  "homepage": "https://github.com/Ractouf/devops#readme",
-  "devDependencies": {
-    "commitizen": "^4.2.5",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.28.0",
-    "eslint-config-prettier": "8.5.0",
-    "jest": "^29.3.1",
-    "prettier": "2.7.1",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+    "name": "devops",
+    "version": "1.0.0",
+    "description": "devops mini-projet",
+    "main": "src/bowling-game.js",
+    "scripts": {
+        "test": "jest",
+        "test:coverage": "jest --coverage",
+        "test:watch": "jest --watchAll",
+        "commit": "cz",
+        "build": "webpack src/bowling-game.js -o public/",
+        "prettier": "prettier -c \"src/**/*.js\"",
+        "prettier:fix": "prettier -w \"src/**/*.js\"",
+        "lint": "eslint \"src/**/*.js\"",
+        "lint:fix": "eslint --fix \"src/**/*.js\"",
+        "code:fix": "npm run prettier:fix && npm run lint:fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ractouf/devops.git"
+    },
+    "keywords": [
+        "devops"
+    ],
+    "author": "Lapinski Damien, Vandeputte François",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ractouf/devops/issues"
+    },
+    "homepage": "https://github.com/Ractouf/devops#readme",
+    "devDependencies": {
+        "commitizen": "^4.2.5",
+        "cz-conventional-changelog": "^3.3.0",
+        "eslint": "^8.28.0",
+        "eslint-config-prettier": "8.5.0",
+        "jest": "^29.3.1",
+        "prettier": "2.7.1",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
-  }
 }
